@@ -113,7 +113,7 @@
     @if(session('success'))
         <p class="success-message">{{ session('success') }}</p>
     @endif
-<h1>Bbb</h1>
+
     <form action="{{ route('register.submit') }}" method="POST">
         @csrf
         <div class="form-group">
