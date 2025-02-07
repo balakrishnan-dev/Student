@@ -113,7 +113,7 @@
     @if(session('success'))
         <p class="success-message">{{ session('success') }}</p>
     @endif
-<h1>Bbb</h1>
+
     <form action="{{ route('register.submit') }}" method="POST">
         @csrf
         <div class="form-group">
@@ -122,11 +122,7 @@
             @error('name') <p>{{ $message }}</p> @enderror
         </div>
 
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            @error('email') <p>{{ $message }}</p> @enderror
-        </div>
+     
 
         <div class="form-group">
             <label for="phone">Phone:</label>
